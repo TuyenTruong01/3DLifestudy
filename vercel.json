@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/studio/room/(.*)", "dest": "/studio/room/index.html" },
+    { "src": "/studio/furniture/(.*)", "dest": "/studio/furniture/index.html" },
+    { "src": "/lab/equipment/(.*)", "dest": "/lab/equipment/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
